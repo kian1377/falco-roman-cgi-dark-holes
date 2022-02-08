@@ -1,4 +1,3 @@
-"""Configuration file for the Roman CGI model."""
 import numpy as np
 import os
 from astropy.io import fits
@@ -6,7 +5,6 @@ import matplotlib.pyplot as plt
 
 import falco
 import roman_phasec_proper as phasec
-
 
 mp = falco.config.ModelParameters()
 mp.compact = falco.config.Object()
@@ -54,6 +52,9 @@ mp.Nwpsbp = 3  # Number of wavelengths to used to approximate an image in each s
 # - 'perfect' for exact numerical answer from full model
 # - 'pwp-bp' for pairwise probing with batch process estimation
 mp.estimator = 'pwp-bp'
+mp.estimator = 'perfect'
+
+
 
 # Pairwise probing:
 mp.est = falco.config.Object()
@@ -337,3 +338,10 @@ mp.F3.compact.res = 2048/309  # sampling of FPM for compact model [pixels per la
 if mp.flagPlot:
     for si in range(mp.Nsbp):
         plt.figure(200); plt.imshow(np.angle(mp.compact.fpmCube[:,:,si])); plt.colorbar(); plt.gca().invert_yaxis(); plt.pause(0.5)
+        
+        
+
+
+
+
+
