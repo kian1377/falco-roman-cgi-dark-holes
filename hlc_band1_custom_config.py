@@ -22,7 +22,7 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
           N_iterations=5,
           spatial_weighting=[], 
           dark_hole_sides='lr',
-          label='hlc_band1_config',
+          label='',
           dm1_initial=np.zeros((48,48)), dm2_initial=np.zeros((48,48)),
           plot_outputs=True, use_parallel=False, N_threads=8, # computational settings
          ):
