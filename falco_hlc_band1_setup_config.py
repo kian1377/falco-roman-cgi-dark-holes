@@ -22,9 +22,10 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
           N_iterations=5,
           spatial_weighting=[], 
           dark_hole_sides='lr',
-          label='',
           dm1_initial=np.zeros((48,48)), dm2_initial=np.zeros((48,48)),
-          plot_outputs=True, use_parallel=False, N_threads=8, # computational settings
+          plot_outputs=True, 
+          quiet=True,
+          use_parallel=False, N_threads=8, # computational settings
          ):
     
     '''
@@ -57,7 +58,19 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
     mp.Nsbp = N_subpass  # Number of sub-bandpasses to divide the whole bandpass into for estimation and control
     mp.Nwpsbp = N_waves_per_subpass # Number of wavelengths to used to approximate an image in each sub-bandpass
     mp.fracBW = fractional_bandwidth  # fractional bandwidth of the whole bandpass (Delta lambda / lambda0)
-    mp.runLabel = label
+    
+    mp.flagImageNoise = True
+    
+    mp.detector = falco.config.Object()
+    mp.detector.gain = 1.0  # [e-/count]
+    mp.detector.darkCurrentRate = 0.015  # [e-/pixel/second]
+    mp.detector.readNoiseStd = 1.7  # [e-/count]
+    mp.detector.tExpVec = 1.0 * np.ones(mp.Nsbp)  # [seconds]
+    mp.detector.peakFluxVec = 1e8 * np.ones(mp.Nsbp)  # [counts/pixel/second]
+    mp.detector.Nexp = 1  # number of exposures to stack
+    mp.detector.wellDepth = 3e4  # [e-]
+    
+    mp.flagSVD = True
     
     # Computing parameters
     mp.flagPlot = plot_outputs
@@ -89,12 +102,14 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
     
     # Pairwise probing parameters to use if mp.estimator='pwp-bp'
     mp.est = falco.config.Object()
-    mp.est.probe = falco.config.Object()
+    mp.est.probe = falco.config.Probe()
     mp.est.probe.Npairs = 3  # Number of pair-wise probe PAIRS to use.
     mp.est.probe.whichDM = 1  # Which DM # to use for probing. 1 or 2. Default is 1
     mp.est.probe.radius = 12  # Max x/y extent of probed region [actuators].
     mp.est.probe.offsetX = 0  # offset of probe center in x [actuators]. Use to avoid central obscurations.
     mp.est.probe.offsetY = 14  # offset of probe center in y [actuators]. Use to avoid central obscurations.
+#     mp.est.probe.xiOffset = 6
+#     mp.est.probe.etaOffset = 0
     mp.est.probe.axis = 'alternate'  # which axis to have the phase discontinuity along [x or y or xy/alt/alternate]
     mp.est.probe.gainFudge = 1  # empirical fudge factor to make average probe amplitude match desired value.
 
@@ -112,7 +127,7 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
     mp.ctrl.flagUseModel = True  # Whether to perform a model-based (vs empirical) grid search for the controller
 
     # Grid- or Line-Search Settings
-    mp.ctrl.log10regVec = np.arange(-6, -2, 1/2)  # log10 of the regularization exponents (often called Beta values)
+    mp.ctrl.log10regVec = np.arange(-6, -2, 1/4)  # log10 of the regularization exponents (often called Beta values)
     mp.ctrl.dmfacVec = np.array([1.])  # Proportional gain term applied to DM delta command. Usually in range [0.5,1].
     
     mp.WspatialDef = spatial_weighting
@@ -315,6 +330,7 @@ def setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01, # for a
         
 
 def perform_phase_retrieval(mp, quiet=False):
+    print('Performing phase retrieval.')
     # Perform an idealized phase retrieval (get the E-field directly) ************************
     optval = copy.copy(mp.full)
     optval.source_x_offset = 0
@@ -344,19 +360,17 @@ def perform_phase_retrieval(mp, quiet=False):
     nCompact = falco.util.ceil_even(mp.P1.compact.Nbeam + 1)
     mp.P1.compact.E = np.ones((nCompact, nCompact, mp.Nsbp), dtype=complex)
     for iSubband in range(mp.Nsbp):
-        print('Performing retrieval for sub-bandpass {:d}.\n'.format(iSubband+1))
+        print('\n\tPerforming retrieval for sub-bandpass {:d}.'.format(iSubband+1))
         lambda_um = 1e6*mp.lambda0*lambdaFacs[iSubband]
 
-        print('Getting aberrations from full optical train.')
+        print('\tGetting aberrations from full optical train.')
         optval.pinhole_diam_m = 0  # 0 means don't use the pinhole at FPAM
         fieldFullAll, sampling = proper.prop_run('roman_phasec', lambda_um, nout, 
                                                  QUIET=quiet, PASSVALUE=optval.__dict__)
-        print()
-        print('Using pinhole at FPM to get back-end aberrations.')
+        print('\tUsing pinhole at FPM to get back-end aberrations.')
         optval.pinhole_diam_m = mp.F3.pinhole_diam_m;
         fieldFullBackEnd, sampling = proper.prop_run('roman_phasec', lambda_um, nout, 
                                                      QUIET=quiet, PASSVALUE=optval.__dict__)
-        print()
         optval.pinhole_diam_m = 0  # 0 means don't use the pinhole at FPM
 
         # Subtract off back-end phase aberrations from the phase retrieval estimate
@@ -382,5 +396,9 @@ def perform_phase_retrieval(mp, quiet=False):
 
     # Don't double count the pupil amplitude with the phase retrieval and a model-based mask
     mp.P1.compact.mask = np.ones_like(mp.P1.compact.mask)
-    
     print('Phase retrieval complete.')
+    
+    
+    
+    
+    

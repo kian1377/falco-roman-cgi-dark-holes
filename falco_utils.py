@@ -1,7 +1,25 @@
 import numpy as np
-
+import pickle
+from pathlib import Path
+from astropy.io import fits
 from tabulate import tabulate
 from matplotlib.patches import Circle
+
+import proper
+import roman_phasec_proper as phasec
+
+output_dir = Path('/home/u21/kianmilani/src/pyfalco/data/brief/')
+
+flatmaps_dir = Path('/home/u21/kianmilani/Documents/falco-roman-cgi-dark-holes/flatmaps')
+dm1_flatmap = fits.getdata(flatmaps_dir/'dm1_m_flat_hlc_band1.fits')
+dm2_flatmap = fits.getdata(flatmaps_dir/'dm2_m_flat_hlc_band1.fits')
+dm1_design = fits.getdata(flatmaps_dir/'dm1_m_design_hlc_band1.fits')
+dm2_design = fits.getdata(flatmaps_dir/'dm2_m_design_hlc_band1.fits')
+dm1_total = dm1_flatmap + dm1_design
+dm2_total = dm2_flatmap + dm2_design
+
+dm1_best = proper.prop_fits_read( phasec.lib_dir + r'/examples/hlc_best_contrast_dm1.fits' )
+dm2_best = proper.prop_fits_read( phasec.lib_dir + r'/examples/hlc_best_contrast_dm2.fits' )
 
 def create_annular_mask(params, mp, npsf):
     xfp = np.linspace(-0.5, 0.5, npsf) * npsf * mp.full.final_sampling_lam0
@@ -29,3 +47,17 @@ def zone_table(zone_radii, zone_contrasts):
     print(tabulate(rows, numalign='right', stralign='center', tablefmt='fancy_grid', floatfmt=['', '.1f', '.1f', '.3e'],
                    headers=['Zone', 'Inner Radius', 'Outer Radius', 'Zone Avg Contrast']) )
 
+
+# functions for saving python data
+def save_pickle(fname, data, quiet=False):
+    out = open(str(output_dir/fname), 'wb')
+    pickle.dump(data, out)
+    out.close()
+    if not quiet: print('Saved data to: ', str(output_dir/fname))
+
+def load_pickle(fname):
+    infile = open(str(output_dir/fname),'rb')
+    pkl_data = pickle.load(infile)
+    infile.close()
+    return pkl_data    
+    
