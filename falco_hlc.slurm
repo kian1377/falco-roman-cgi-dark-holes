@@ -21,7 +21,7 @@
 ### REQUIRED. Set the number of nodes
 #SBATCH --nodes=1
 ### REQUIRED. Set the memory required for this job.
-#SBATCH --mem=32gb
+#SBATCH --mem=64gb
 ### REQUIRED. Specify the time required for this job, hhh:mm:ss
 #SBATCH --time=2:00:00
 
@@ -32,6 +32,6 @@
 cd ~/Documents/falco-roman-cgi-dark-holes
 conda init bash
 source ~/.bashrc
-conda activate poppy38-env
-python falco_hlc_band1_run_config.py
+conda activate poppy-env
+python run_falco_hlc_band1_config.py
 

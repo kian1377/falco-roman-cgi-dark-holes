@@ -19,10 +19,10 @@ reload(config)
 reload(fu)
 
 mp = config.setup(N_subpass=1, N_waves_per_subpass=1, fractional_bandwidth=0.01,
-                  estimator='perfect', 
+                  estimator='pwp-bp', 
                   N_iterations=10,
                   spatial_weighting=[],
-                  dark_hole_sides='r',
+                  dark_hole_sides='lr',
                   dm1_initial=fu.dm1_best, dm2_initial=fu.dm2_best)
 
 mp.runLabel = 'hlc_band1_best_' + mp.estimator + '_bw{:.2f}_'.format(mp.fracBW) \

@@ -1,0 +1,323 @@
+no change     /home/u21/kianmilani/anaconda3/condabin/conda
+no change     /home/u21/kianmilani/anaconda3/bin/conda
+no change     /home/u21/kianmilani/anaconda3/bin/conda-env
+no change     /home/u21/kianmilani/anaconda3/bin/activate
+no change     /home/u21/kianmilani/anaconda3/bin/deactivate
+no change     /home/u21/kianmilani/anaconda3/etc/profile.d/conda.sh
+no change     /home/u21/kianmilani/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/u21/kianmilani/anaconda3/shell/condabin/Conda.psm1
+no change     /home/u21/kianmilani/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/u21/kianmilani/anaconda3/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /home/u21/kianmilani/anaconda3/etc/profile.d/conda.csh
+no change     /home/u21/kianmilani/.bashrc
+No action taken.
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: divide by zero encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/plot.py:42: RuntimeWarning: invalid value encountered in log10
+  im1 = ax1.imshow(np.log10(Im), cmap='magma', interpolation='none',
+/home/u21/kianmilani/src/pyfalco/falco/config
+hlc_band1_best_perfect_bw0.01_r_10itr_v1
+
+Performing phase retrieval.
+
+	Performing retrieval for sub-bandpass 1.
+	Getting aberrations from full optical train.
+	Using pinhole at FPM to get back-end aberrations.
+Phase retrieval complete.
+ Using 1 discrete wavelength(s) in each of 1 sub-bandpasses over a 1.0% total bandpass 
+
+Sub-bandpasses are centered at wavelengths [nm]:	 [575.]
+  Influence function padded from 84 to 84 points for A.S. propagation.
+Computing datacube of DM influence functions... done.
+  Influence function padded from 84 to 84 points for A.S. propagation.
+Computing datacube of DM influence functions... done.
+
+Beginning Trial 1 of Series 1.
+
+DM 1-to-2 Fresnel number (using radius) = 932.0391304347827
+Iteration: 0 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 47.194204568862915
+Weeding out weak actuators from the control Jacobian...
+  DM1: 1762/2304 (76.48%) actuators kept for Jacobian
+  DM2: 1786/2304 (77.52%) actuators kept for Jacobian
+[Getting updated summed image]	Elapsed: 14.629228591918945
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.74e-07	9.22e-08	4.83e-08	2.53e-08	1.34e-08	7.33e-09	4.20e-09	2.52e-09	1.54e-09	9.53e-10	5.88e-10	3.66e-10	2.39e-10	1.69e-10	1.32e-10	1.13e-10	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 1.13e-10 normalized intensity.
+ DM1 P-V in volts: 0.091
+ DM2 P-V in volts: 0.085
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 1.37e-09 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 1 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.18258595466614
+[Getting updated summed image]	Elapsed: 15.01901912689209
+Complex projection of deltaE is 1.06    for subband 0/0
+Complex correlation of deltaE is 1.00    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.72e-07	9.16e-08	4.82e-08	2.52e-08	1.34e-08	7.37e-09	4.25e-09	2.55e-09	1.56e-09	9.51e-10	5.77e-10	3.52e-10	2.24e-10	1.55e-10	1.19e-10	1.01e-10	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 1.01e-10 normalized intensity.
+ DM1 P-V in volts: 0.160
+ DM2 P-V in volts: 0.125
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 5.07e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 2 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.19625163078308
+[Getting updated summed image]	Elapsed: 15.964806079864502
+Complex projection of deltaE is 0.72    for subband 0/0
+Complex correlation of deltaE is 0.99    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.15e-08	4.80e-08	2.51e-08	1.33e-08	7.29e-09	4.17e-09	2.48e-09	1.49e-09	8.97e-10	5.36e-10	3.23e-10	2.04e-10	1.42e-10	1.10e-10	9.48e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 9.48e-11 normalized intensity.
+ DM1 P-V in volts: 0.216
+ DM2 P-V in volts: 0.158
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 -3.97e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 3 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 35.86574625968933
+[Getting updated summed image]	Elapsed: 14.128580331802368
+Complex projection of deltaE is 0.69    for subband 0/0
+Complex correlation of deltaE is 0.89    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.12e-08	4.79e-08	2.50e-08	1.32e-08	7.21e-09	4.10e-09	2.41e-09	1.43e-09	8.49e-10	5.00e-10	2.99e-10	1.89e-10	1.32e-10	1.04e-10	9.06e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 9.06e-11 normalized intensity.
+ DM1 P-V in volts: 0.262
+ DM2 P-V in volts: 0.191
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 -3.56e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 4 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 35.9733943939209
+[Getting updated summed image]	Elapsed: 14.996997833251953
+Complex projection of deltaE is 0.61    for subband 0/0
+Complex correlation of deltaE is 0.99    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.11e-08	4.78e-08	2.49e-08	1.31e-08	7.13e-09	4.03e-09	2.35e-09	1.38e-09	8.07e-10	4.69e-10	2.78e-10	1.76e-10	1.24e-10	9.89e-11	8.72e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 8.72e-11 normalized intensity.
+ DM1 P-V in volts: 0.301
+ DM2 P-V in volts: 0.224
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 0.00e+00 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 5 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.070122957229614
+[Getting updated summed image]	Elapsed: 17.57799506187439
+Complex projection of deltaE is 0.51    for subband 0/0
+Complex correlation of deltaE is 0.98    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.11e-08	4.77e-08	2.48e-08	1.30e-08	7.05e-09	3.96e-09	2.29e-09	1.33e-09	7.69e-10	4.42e-10	2.60e-10	1.65e-10	1.17e-10	9.46e-11	8.43e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 8.43e-11 normalized intensity.
+ DM1 P-V in volts: 0.334
+ DM2 P-V in volts: 0.255
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 1.34e-09 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 6 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.11505675315857
+[Getting updated summed image]	Elapsed: 17.09430170059204
+Complex projection of deltaE is 0.41    for subband 0/0
+Complex correlation of deltaE is 0.99    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.10e-08	4.76e-08	2.47e-08	1.30e-08	6.98e-09	3.89e-09	2.23e-09	1.28e-09	7.33e-10	4.18e-10	2.45e-10	1.55e-10	1.11e-10	9.09e-11	8.17e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 8.17e-11 normalized intensity.
+ DM1 P-V in volts: 0.364
+ DM2 P-V in volts: 0.284
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 4.66e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 7 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.01689863204956
+[Getting updated summed image]	Elapsed: 19.067883491516113
+Complex projection of deltaE is 0.36    for subband 0/0
+Complex correlation of deltaE is 0.99    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.09e-08	4.75e-08	2.46e-08	1.29e-08	6.90e-09	3.83e-09	2.17e-09	1.24e-09	7.01e-10	3.96e-10	2.31e-10	1.47e-10	1.06e-10	8.78e-11	7.96e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 7.96e-11 normalized intensity.
+ DM1 P-V in volts: 0.391
+ DM2 P-V in volts: 0.312
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 4.52e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 8 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.13140606880188
+[Getting updated summed image]	Elapsed: 17.61604595184326
+Complex projection of deltaE is 0.33    for subband 0/0
+Complex correlation of deltaE is 0.98    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.09e-08	4.75e-08	2.46e-08	1.28e-08	6.83e-09	3.76e-09	2.12e-09	1.20e-09	6.71e-10	3.76e-10	2.19e-10	1.40e-10	1.02e-10	8.52e-11	7.77e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 7.77e-11 normalized intensity.
+ DM1 P-V in volts: 0.419
+ DM2 P-V in volts: 0.342
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 1.71e-09 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Iteration: 9 / 9
+Zernike modes (Noll indexing) used in this Jacobian:	[1]
+DMs to be used in this iteration = [ 1 2 ]
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+Computing control Jacobian matrices in serial:
+  mode0dm1...mode0dm2...done.
+Elapsed: 36.40617108345032
+[Getting updated summed image]	Elapsed: 19.022834300994873
+Complex projection of deltaE is 0.31    for subband 0/0
+Complex correlation of deltaE is 0.97    for subband 0/0
+Using the Jacobian to make other matrices...done.
+Control beginning ...
+Scaling factor:		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		1.00		
+log10reg:    		-6.0		-5.8		-5.5		-5.2		-5.0		-4.8		-4.5		-4.2		-4.0		-3.8		-3.5		-3.2		-3.0		-2.8		-2.5		-2.2		
+Inorm:       		1.71e-07	9.08e-08	4.74e-08	2.45e-08	1.27e-08	6.75e-09	3.70e-09	2.07e-09	1.16e-09	6.44e-10	3.59e-10	2.08e-10	1.33e-10	9.85e-11	8.30e-11	7.62e-11	
+Model-based grid search expects log10reg, = -2.2,	 dmfac = 1.00,	 7.62e-11 normalized intensity.
+ DM1 P-V in volts: 0.449
+ DM2 P-V in volts: 0.371
+RMS surface of DM1 = 0.0 nm
+RMS surface of DM2 = 0.0 nm
+Previous Measured NI:			 -3.97e-10 
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl  ...done.
+
+Core throughput within the half-max isophote(s) = 4.53% 	at separation = (7.0, 0.0) lambda0/D.
+
+Saving data snippet to:
+	/home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1_snippet.pkl...done.
+
+Entire workspace NOT saved because mp.flagSaveWS==False
+*** END OF WFSC LOOP ***
+Saved data to:  /home/u21/kianmilani/src/pyfalco/data/brief/hlc_band1_best_perfect_bw0.01_r_10itr_v1
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=73&local_job_id=3454302 by 8am on 2022/04/21.
